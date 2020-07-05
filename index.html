@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Despair</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="slider/jquery.bxslider.min.css">
+    <style>
+        #bx-pager-thumbs a {
+        width: 100px;
+        display: inline-block;
+    }
+
+    #bx-pager-thumbs a img {
+        width: 100%;
+    }
+    </style>
+    <script type="text/javascript">
+    function clock() {
+        var d = new Date();
+        var month_num = d.getMonth()
+        var day = d.getDate();
+        var hours = d.getHours();
+        var minutes = d.getMinutes();
+        var seconds = d.getSeconds();
+
+        month = new Array("января", "февраля", "марта", "апреля", "мая", "июня",
+            "июля", "августа", "сентября", "октября", "ноября", "декабря");
+
+        if (day <= 9) day = "0" + day;
+        if (hours <= 9) hours = "0" + hours;
+        if (minutes <= 9) minutes = "0" + minutes;
+        if (seconds <= 9) seconds = "0" + seconds;
+
+        date_time = "Сегодня - " + day + " " + month[month_num] + " " + d.getFullYear() +
+            " г.&nbsp;&nbsp;&nbsp;Текущее время - " + hours + ":" + minutes + ":" + seconds;
+        if (document.layers) {
+            document.layers.doc_time.document.write(date_time);
+            document.layers.doc_time.document.close();
+        } else document.getElementById("doc_time").innerHTML = date_time;
+        setTimeout("clock()", 1000);
+    }
+    </script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="slider/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+
+        $('.slider').bxSlider();
+        $('.slider-images').bxSlider({
+            mode: 'fade',
+            captions: true,
+            slideWidth: 700,
+            pager: true,
+            prevArrow: '<div class="prev"></div>',
+            nextArrow: '<div class="next"></div>',
+            pagerCustom: '#bx-pager-thumbs'
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <preheader class="preheader">
+        <div class="forzabor">
+            <div class="zabor2"></div>
+        </div>
+    </preheader>
+    <header class="header">
+        <div class="content">
+            <div class="flex">
+                <div class="left">
+                    <div class="triangle">
+                        <div class="triangle-stitches-top"></div><strong class="triangle-content">
+                            <h1>FIORINO</h1>
+                        </strong>
+                        <div class="triangle-stitches-bottom"></div>
+                    </div>
+                </div>
+                <div class="soc">
+                    <div class="click"></div>
+                    <a href="https://www.facebook.com" target="blank" title="facebook">
+                        <div class="fb"></div>
+                    </a>
+                    <a href="https://twitter.com" target="blank" title="twitter">
+                        <div class="tw"></div>
+                    </a>
+                    <a href="=(" target="blank" title="=(">
+                        <div class="firstunknown"></div>
+                    </a>
+                    <a href="=(" target="blank" title="=(">
+                        <div class="secondunknown"></div>
+                    </a>
+                    <a href="=(" target="blank" title="=(">
+                        <div class="thirdunknown"></div>
+                    </a>
+                    <form class="form">
+                        <div class="tr1"></div>
+                        <div class="tr2"></div>
+                        <div class="field">
+                            <input type="search" name="q">
+                            <div class="lined"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <nav class="animenu">
+                <ul class="animenu__nav">
+                    <li class="q">
+                        <div class="lines"></div>
+                        <div class="e"></div><a href="">Home</a>
+                    </li>
+                    <li>
+                        <div class="l1"></div><a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <div class="l2"></div><a href="#">Shortcode</a>
+                    <li>
+                        <div class="l3"></div><a href="">Gallery</a>
+                    </li>
+                    <li>
+                        <div class="l4"></div><a href="">Contact</a>
+                    </li>
+                    <li class="w">
+                        <div class="l5"></div>
+                        <div class="r"></div><a href="">Dropdown</a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+    <aheader class="aheader">
+        <div class="fordashed1">
+            <div class="dashed"></div>
+        </div>
+        <div class="slider-wrap">
+            <div class="slider-images">
+                <div>
+                    <div class="trsd"></div>
+                    <div class="trsdt"></div>
+                    <div class="trsd3"></div>
+                    <div class="trsd4"></div>
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                    <img src="hm/bg1.png" alt="slide">
+                </div>
+                <div>
+                    <div class="trsd"></div>
+                    <div class="trsdt"></div>
+                    <div class="trsd3"></div>
+                    <div class="trsd4"></div>
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                    <img src="hm/2.png" alt="slide">
+                </div>
+                <div>
+                    <div class="trsd"></div>
+                    <div class="trsdt"></div>
+                    <div class="trsd3"></div>
+                    <div class="trsd4"></div>
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                    <img src="hm/3.png" alt="slide">
+                </div>
+            </div>
+        </div>
+    </aheader>
+    <div class="block">
+        <main class="main" class="flex-containerm">
+            <div class="dashed2"></div>
+            <div class="zabor3"></div>
+            <div class="maintwo">
+                <div class="main-item">
+                    <div class="triangle1">
+                        <div class="triangle1-stitches-top"></div><strong class="triangle1-content">
+                            <h1>WHAT ARE YOU WAITING FOR? ...GET OUR SHOCK BUNDLE!</h1>
+                        </strong>
+                        <div class="triangle1-stitches-bottom"></div>
+                    </div>
+                    <div class="why">
+                        <div class="why1">
+                            <div class="wwhy1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qwer" flex>
+                        <div class="qwe">
+                            <div class="qwed"></div>
+                        </div>
+                    </div>
+                    <div class="flex-container">
+                        <div class="posts">
+                            <div class="post">
+                                <!--  <div class="container"> -->
+                                <div class="postzabor"></div>
+                                <!-- </div> -->
+                                <div class="fmflag"></div>
+                                <div class="circlefm">
+                                    <p class="vos"> 888 </p>
+                                </div>
+                                <div class="flagfm">
+                                    <p class="pclass">
+                                        by
+                                        <br>
+                                        Admin
+                                        <br>
+                                        Nov 28
+                                        <br>
+                                        2011
+                                    </p>
+                                </div>
+                                <!-- <h1 class="post-title">In few seconds you can  update your web</h1> -->
+                                <div class="title">
+                                    <div class="title-stitches-top"></div>
+                                    <strong class="title-content">
+                                        <h4>In few seconds you can
+                                            <br>
+                                            update your web</h4>
+                                    </strong>
+                                    <div class="title-stitches-bottom"></div>
+                                </div>
+                                <div class="fortext">
+                                    <p>Proin a lectus eget felis sollicitudin congue sit amet vel libero. Fusce rutrum luctus felis, nec tempus elit pharetra ultricies maecenas scelerisque sem non nisl. Fusce se lorem in enim proin a lectus eget felis sollicitudin congue sit amet vel libero. Proin a lectus eget felis sollicitudin congue sit amet vel scelerisque sem non nisl. Fusce se lorem in enim. Proin a lectus eget felis sollicitudin congue sit amet vel libero." width="457" height="140" title="Proin a lectus eget felis sollicitudin congue sit amet vel libero. Fusce rutrum luctus felis, nec tempus elit pharetra ultricies maecenas scelerisque sem non nisl. Fusce se lorem in enim proin a lectus eget felis sollicitudin congue sit amet vel libero. Proin a lectus eget felis sollicitudin congue sit amet vel scelerisque sem non nisl. Fusce se lorem in enim. Proin a lectus eget felis sollicitudin congue sit amet vel libero.</p>
+                                </div>
+                            </div>
+                            <div class="post">
+                                <div class="fmflag"></div>
+                                <div class="circlefm">
+                                    <p class="vos"> 888 </p>
+                                </div>
+                                <div class="flagfm">
+                                    <p class="pclass">
+                                        by
+                                        <br>
+                                        Admin
+                                        <br>
+                                        Nov 28
+                                        <br>
+                                        2011
+                                    </p>
+                                </div>
+                                <div class="title">
+                                    <div class="title-stitches-top"></div>
+                                    <strong class="title-content">
+                                        <h4>In few seconds you can
+                                            <br>
+                                            update your web</h4>
+                                    </strong>
+                                    <div class="title-stitches-bottom"></div>
+                                </div>
+                                <div class="fortext">
+                                    <p>Proin a lectus eget felis sollicitudin congue sit amet vel libero. Fusce rutrum luctus felis, nec tempus elit pharetra ultricies maecenas scelerisque sem non nisl. Fusce se lorem in enim proin a lectus eget felis sollicitudin congue sit amet vel libero. Proin a lectus eget felis sollicitudin congue sit amet vel scelerisque sem non nisl. Fusce se lorem in enim. Proin a lectus eget felis sollicitudin congue sit amet vel libero." width="457" height="140" title="Proin a lectus eget felis sollicitudin congue sit amet vel libero. Fusce rutrum luctus felis, nec tempus elit pharetra ultricies maecenas scelerisque sem non nisl. Fusce se lorem in enim proin a lectus eget felis sollicitudin congue sit amet vel libero. Proin a lectus eget felis sollicitudin congue sit amet vel scelerisque sem non nisl. Fusce se lorem in enim. Proin a lectus eget felis sollicitudin congue sit amet vel libero.</p>
+                                </div>
+                            </div>
+                            <div class="post">
+                                <div class="fmflag"></div>
+                                <div class="circlefm">
+                                    <p class="vos"> 888 </p>
+                                </div>
+                                <div class="flagfm">
+                                    <p class="pclass">
+                                        by
+                                        <br>
+                                        Admin
+                                        <br>
+                                        Nov 28
+                                        <br>
+                                        2011
+                                    </p>
+                                </div>
+                                <div class="title">
+                                    <div class="title-stitches-top"></div>
+                                    <strong class="title-content">
+                                        <h4>In few seconds you can
+                                            <br>
+                                            update your web</h4>
+                                    </strong>
+                                    <div class="title-stitches-bottom"></div>
+                                </div>
+                                <div class="fortext">
+                                    <p>Proin a lectus eget felis sollicitudin congue sit amet vel libero. Fusce rutrum luctus felis, nec tempus elit pharetra ultricies maecenas scelerisque sem non nisl. Fusce se lorem in enim proin a lectus eget felis sollicitudin congue sit amet vel libero. Proin a lectus eget felis sollicitudin congue sit amet vel scelerisque sem non nisl. Fusce se lorem in enim. Proin a lectus eget felis sollicitudin congue sit amet vel libero." width="457" height="140" title="Proin a lectus eget felis sollicitudin congue sit amet vel libero. Fusce rutrum luctus felis, nec tempus elit pharetra ultricies maecenas scelerisque sem non nisl. Fusce se lorem in enim proin a lectus eget felis sollicitudin congue sit amet vel libero. Proin a lectus eget felis sollicitudin congue sit amet vel scelerisque sem non nisl. Fusce se lorem in enim. Proin a lectus eget felis sollicitudin congue sit amet vel libero.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fs">
+                            <div class="f">
+                                <div class="f-base">
+                                    <span id="doc_time">
+                                        Дата и время
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="fac">
+                                <div class="f-base">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </main>
+    </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="flex">
+            <div class="left2">
+                <div class="triangle3">
+                    <div class="triangle3-stitches-top"></div><strong class="triangle3-content">
+                        <h1>FIORINO</h1>
+                    </strong>
+                    <div class="triangle3-stitches-bottom"></div>
+                </div>
+            </div>
+        </div>
+        <div class="why3">
+            <div class="wwhy3">
+            </div>
+        </div>
+        <div class="qwer3" flex>
+            <div class="qwe3">
+                <div class="qwed3"></div>
+            </div>
+            <div class="smtf">
+                <div class="smtf1"></div>
+                <div class="smtf2"></div>
+            </div>
+    </footer>
+    <afterfooter class="afterfooter">
+        <div class="forzabor2">
+            <div class="zabor"></div>
+        </div>
+    </afterfooter>
+    <script type="text/javascript">
+    clock();
+    </script>
+</body>
+
+</html>
